@@ -79,14 +79,6 @@
       z-index: 1;
     }
 
-    .logo {
-      max-width: 120px;
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      z-index: 2;
-    }
-
     .container {
       display: flex;
       justify-content: center;
@@ -180,6 +172,16 @@
         padding: 14px 24px;
       }
     }
+
+    /* Position the GIKI logo at the bottom */
+    .logo {
+      max-width: 120px;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
   </style>
 </head>
 <body>
@@ -190,9 +192,6 @@
     <div class="blob blob2"></div>
     <div class="blob blob3"></div>
   </div>
-
-  <!-- GIKI Logo -->
-  <img src="giki.png" alt="GIKI Logo" class="logo" />
 
   <div class="container">
     <div class="content">
@@ -220,6 +219,9 @@
   <div class="footer">
     &copy; 2025 DineHub. Built for you at GIKI, for GIKI.
   </div>
+
+  <!-- GIKI Logo -->
+  <img src="giki.png" alt="GIKI Logo" class="logo" />
 
 </body>
 </html>
