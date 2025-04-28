@@ -33,12 +33,12 @@
       position: relative;
       z-index: 2;
     }
-    .apk-button {
-      margin: 30px 0;
+    .apk-button, .web-button {
+      margin: 15px 0;
       position: relative;
       z-index: 2;
     }
-    .apk-button a {
+    .apk-button a, .web-button a {
       background-color: #FF6600;
       color: white;
       padding: 15px 30px;
@@ -47,8 +47,10 @@
       border-radius: 8px;
       display: inline-block;
       transition: background-color 0.3s;
+      min-width: 200px; /* Ensures both buttons are the same width */
+      text-align: center; /* Centers text within the fixed width */
     }
-    .apk-button a:hover {
+    .apk-button a:hover, .web-button a:hover {
       background-color: #e05500;
     }
     .technologies {
@@ -100,12 +102,17 @@
     DineHub is a student-driven project created specifically for GIKI students. It serves as a food e-marketplace designed to solve a long-standing problem faced by GIKI residents: the challenge of easily ordering food.
   </p>
 
+  <div class="web-button">
+    <a href="https://dinehub.giki.edu.pk" target="_blank">
+      Use the Web App
+    </a>
+  </div>
+
   <div class="apk-button">
-    <a href="https://drive.google.com/uc?id=1VfxnyJmKM_TPCxv0Zg8cC54zdzkkMV0z&export=download" target="_blank" download>
+    <a href="https://drive.google.com/uc?id=1W0k9SntnEwhAm-S5UNecaQCRGHmUGUW0&export=download" target="_blank" download>
       Download APK
     </a>
   </div>
-  
 
   <div class="Features">
     <h2>Core Capabilities</h2>
